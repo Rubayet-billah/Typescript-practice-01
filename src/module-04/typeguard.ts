@@ -37,3 +37,51 @@ const adminUser1: AdminUserType = { name: "Founding Titan", role: "admin" };
 
 console.log(checkAdmin(normalUser1));
 console.log(checkAdmin(adminUser1));
+
+// intance guard
+
+class Animal {
+  name: string;
+  species: string;
+
+  constructor(name: string, species: string) {
+    this.name = name;
+    this.species = species;
+  }
+
+  makeSound() {
+    console.log("Making sound");
+  }
+}
+
+class Dog extends Animal {
+  constructor(name: string, species: string) {
+    super(name, species);
+  }
+
+  makeBark() {
+    console.log("Ghew Ghew");
+  }
+}
+
+class Mew extends Animal {
+  constructor(name: string, species: string) {
+    super(name, species);
+  }
+
+  makeMew() {
+    console.log("Mew Mew");
+  }
+}
+
+// type guard
+
+function getAnimal(animal: Animal) {
+  if (animal instanceof Dog) {
+    animal.makeBark();
+  } else if (animal instanceof Mew) {
+    animal.makeMew();
+  } else {
+    animal.makeSound();
+  }
+}
