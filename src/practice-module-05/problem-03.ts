@@ -4,6 +4,7 @@ You have an interface for Product, containing the product's id, name, price, and
 Write a TypeScript generic function that takes this array, a criterion , and returns a new array containing only the products that match the given criterion and value. Use a generic type parameter in the function signature to ensure type safety.
 */
 
+/*
 interface Product {
   id: number;
   namne: string;
@@ -18,3 +19,4 @@ function getProducts<T extends keyof Product>(
 ): Product[] {
   return products.filter((product) => product[criterion] === value);
 }
+*/
