@@ -1,68 +1,68 @@
-class Person {
-  takeNap(): void {
-    console.log("I am sleeping 8 hours per day");
-  }
-}
+// class Person {
+//   takeNap(): void {
+//     console.log("I am sleeping 8 hours per day");
+//   }
+// }
 
-class Student extends Person {
-  takeNap(): void {
-    console.log(`I am sleeping 10 hours per day`);
-  }
-}
+// class Student extends Person {
+//   takeNap(): void {
+//     console.log(`I am sleeping 10 hours per day`);
+//   }
+// }
 
-class Developer extends Person {
-  takeNap(): void {
-    console.log(`I am sleeping 5 hours per day`);
-  }
-}
+// class Developer extends Person {
+//   takeNap(): void {
+//     console.log(`I am sleeping 5 hours per day`);
+//   }
+// }
 
-function getNap(param: Person) {
-  param.takeNap();
-}
+// function getNap(param: Person) {
+//   param.takeNap();
+// }
 
-const person1 = new Person();
-const person2 = new Student();
-const person3 = new Developer();
-getNap(person1);
-getNap(person2);
-getNap(person3);
+// const person1 = new Person();
+// const person2 = new Student();
+// const person3 = new Developer();
+// getNap(person1);
+// getNap(person2);
+// getNap(person3);
 
-class Shape {
-  getArea(): number {
-    return 0;
-  }
-}
+// class Shape {
+//   getArea(): number {
+//     return 0;
+//   }
+// }
 
-class Circle extends Shape {
-  radius: number;
+// class Circle extends Shape {
+//   radius: number;
 
-  constructor(radius: number) {
-    super();
-    this.radius = radius;
-  }
-  getArea(): number {
-    return Math.PI * this.radius * this.radius;
-  }
-}
+//   constructor(radius: number) {
+//     super();
+//     this.radius = radius;
+//   }
+//   getArea(): number {
+//     return Math.PI * this.radius * this.radius;
+//   }
+// }
 
-class Rectangle extends Shape {
-  height: number;
-  width: number;
+// class Rectangle extends Shape {
+//   height: number;
+//   width: number;
 
-  constructor(height: number, width: number) {
-    super();
-    this.height = height;
-    this.width = width;
-  }
+//   constructor(height: number, width: number) {
+//     super();
+//     this.height = height;
+//     this.width = width;
+//   }
 
-  getArea(): number {
-    return this.height * this.width;
-  }
-}
+//   getArea(): number {
+//     return this.height * this.width;
+//   }
+// }
 
-function getAreaOfShape(shape: Shape): number {
-  return shape.getArea();
-}
+// function getAreaOfShape(shape: Shape): number {
+//   return shape.getArea();
+// }
 
-getAreaOfShape(new Circle(16));
-getAreaOfShape(new Rectangle(15, 13));
+// getAreaOfShape(new Circle(16));
+// getAreaOfShape(new Rectangle(15, 13));
