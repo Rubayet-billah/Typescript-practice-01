@@ -6,6 +6,7 @@ For example, if the first array is [1, 2, 3, 4, 5] and the second array is [2, 4
 The function should handle arrays of any length and should return the resulting array in the same order as they appear in the first array. 
 */
 
+/*
 function commonElements(arr1: number[], arr2: number[]): number[] {
   let resultArr: number[] = [];
 
@@ -18,3 +19,4 @@ function commonElements(arr1: number[], arr2: number[]): number[] {
 }
 
 console.log(commonElements([1, 2, 3, 4, 5], [2, 4, 6, 8]));
+*/
